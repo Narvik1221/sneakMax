@@ -1,0 +1,66 @@
+.footer {
+  padding: clamp(16px, 4vw, 20px) 0 0;
+  background-color: #444b58;
+  color: white;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 20;
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  nav {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: clamp(8px, 2vw, 10px);
+
+    font-size: clamp(12px, 1.5vw, 14px);
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+      gap: 40px;
+      padding: 20px 0 40px 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: clamp(16px, 3vw, 40px);
+  }
+
+  .logo {
+    align-self: baseline;
+    font-size: clamp(24px, 5vw, 30px);
+    font-weight: 700;
+  }
+
+  .list {
+    display: flex;
+    gap: clamp(16px, 3vw, 40px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .link {
+    cursor: pointer;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

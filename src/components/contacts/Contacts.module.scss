@@ -1,0 +1,127 @@
+.contacts {
+  padding: 20px;
+  background-color: #f3f6f6;
+  padding: 60px 0;
+  color: #444b58;
+
+  .contacts__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .left {
+    min-width: 320px;
+    flex: 1;
+  }
+
+  .right {
+    min-width: 320px;
+    flex: 1;
+    max-width: 680px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .left__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  .left__info {
+    display: flex;
+    color: #b2b5bb;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .left__phone {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+
+    margin-bottom: 10px;
+  }
+
+  .left__address {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+
+    margin-bottom: 40px;
+  }
+  .left__bottom {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .left__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #0e5a4c;
+  }
+}
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  position: relative;
+  margin-left: 10px;
+  color: #444b58;
+  width: 20px;
+  height: 20px;
+  box-shadow: 2px 4px 10px 0px #000d5433;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tooltip {
+  min-width: 130px;
+  width: 52vw;
+  bottom: 36px;
+  max-width: 426px;
+  bottom: 36px;
+  max-width: 426px;
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #444b58;
+  border-radius: 5px;
+  box-shadow: 4px 8px 20px 0px rgba(0, 13, 84, 0.2);
+  font-size: 14px;
+  z-index: 10;
+  &::before {
+    left: 12px;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    transform: rotate(180deg);
+  }
+}

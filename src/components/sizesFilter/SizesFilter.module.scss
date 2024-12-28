@@ -1,0 +1,32 @@
+.sizesFilter {
+  margin-bottom: 20px;
+
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: calc(100% / 3);
+      display: inline-block;
+      padding: 26px 0;
+      text-align: center;
+      border: 1px solid rgb(219, 187, 169);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        background: rgba(219, 187, 169, 0.7);
+      }
+
+      &.active {
+        background: rgb(219, 187, 169);
+      }
+
+      label {
+        width: 100%;
+        user-select: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

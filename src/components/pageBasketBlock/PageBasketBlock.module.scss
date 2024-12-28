@@ -1,0 +1,149 @@
+.page_basket {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+
+  box-shadow: 0px -4px 10px 0px rgba(0, 13, 84, 0.1);
+  background: rgb(255, 255, 255);
+  max-width: 580px;
+  width: 100%;
+  padding-top: 10px;
+  max-height: 902px;
+  padding: clamp(20px, 3vw, 40px);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 4px;
+  color: #444b58;
+  height: 60px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 10px;
+  &::placeholder {
+    color: #b2b5bb;
+  }
+}
+.basket__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(20px, 3vw, 40px);
+}
+.number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: right;
+
+  color: #b2b5bb;
+}
+.title {
+  color: #444b58;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 13px;
+  box-shadow: 0px -4px 10px 0px rgba(0, 13, 84, 0.1);
+  background: rgb(255, 255, 255);
+
+  h5 {
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  p {
+    color: rgb(77, 77, 77);
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
+
+.btn {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 4px;
+  background: #f14f4f;
+  padding: 22px 47px;
+  width: fit-content;
+
+  &:hover {
+    background: #cc4949;
+  }
+
+  &:active {
+    background: #8c2828;
+  }
+
+  &:disabled {
+    background-color: #cc4949;
+    opacity: 0.8;
+    cursor: auto;
+  }
+}
+.basket__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: clamp(15px, 2.4vw, 30px);
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-bottom: clamp(20px, 3vw, 40px);
+}
+.basket_row {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #b2b5bb;
+}
+.basket_sum {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #444b58;
+}
+.basket_accordion {
+}
+.accordion_item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.accordion_button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.accordion_button {
+  &.active {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.accordion__top {
+  display: flex;
+  justify-content: space-between;
+}

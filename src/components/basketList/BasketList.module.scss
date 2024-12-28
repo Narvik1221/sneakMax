@@ -1,0 +1,13 @@
+.basketList {
+  max-height: min(414px, 50vh);
+  overflow: auto;
+  transition: all 300ms ease-out;
+  height: 260px;
+  &.default {
+    padding: 0 20px;
+  }
+
+  &.page {
+    max-height: 260px;
+  }
+}

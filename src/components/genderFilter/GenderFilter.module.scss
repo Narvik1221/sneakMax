@@ -1,0 +1,40 @@
+.genderFilter {
+  margin-bottom: 20px;
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    label {
+      position: relative;
+      height: 24px;
+      line-height: 24px;
+      padding-left: 34px;
+
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgb(219, 187, 169);
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    input:checked + label::before {
+      background: url("../../assets/check.svg") no-repeat center;
+    }
+  }
+}

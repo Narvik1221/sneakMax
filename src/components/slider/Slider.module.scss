@@ -1,0 +1,236 @@
+.genderFilter {
+  margin-bottom: 20px;
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    label {
+      position: relative;
+      height: 24px;
+      line-height: 24px;
+      padding-left: 34px;
+
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgb(219, 187, 169);
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    input:checked + label::before {
+      background: url("../../assets/check.svg") no-repeat center;
+    }
+  }
+}
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.slide__list {
+  max-height: 390px;
+  overflow-y: auto;
+  display: flex;
+  gap: 0 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.slide__item {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  min-height: 658px;
+  padding: clamp(16px, 4vw, 40px) clamp(30px, 9vw, 100px);
+  margin: 60px 0;
+  background-color: #fff4ee;
+}
+.slide__title {
+  color: #444b58;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 20px;
+}
+.slide__subtitle {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 10px;
+}
+.slide_question {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 20px;
+}
+.line {
+  width: 100%;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 20px;
+}
+.slide__name {
+  color: black;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.slide__bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+.slide__bottom_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slide__number {
+  color: #808080;
+  display: flex;
+  gap: 10px;
+}
+
+.slide__button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444b58;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #444b58;
+  border-radius: 4px;
+  padding: 17px clamp(20px, 3vw, 40px);
+}
+.slide2__list {
+  margin-top: 20px;
+  display: flex;
+  gap: clamp(20px, 5.8vw, 70px);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.slide2__image {
+  margin-bottom: 20px;
+}
+.slide3_textarea {
+  padding: 20px;
+  max-width: 465px;
+  max-height: 246px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  border-radius: 8px;
+  outline: none;
+  &::placeholder {
+    color: #dbbba9;
+  }
+}
+.form4 {
+  margin-top: 10px;
+  max-width: 655px;
+  width: 100%;
+  background-color: #dbbba9;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  color: white;
+}
+.form4__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f14f4f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 22px 74px;
+  margin-top: 20px;
+  max-width: 220px;
+  &:hover {
+    background-color: #cc4949;
+  }
+  &:active {
+    background-color: #8c2828;
+  }
+}
+.form4__title {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.form4__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.form4__input {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  color: #444b58;
+  height: 60px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 10px;
+  &::placeholder {
+    color: #b2b5bb;
+  }
+}
+.slide4__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #dbbba9;
+  margin-bottom: 24px;
+}
+.line4 {
+  @extend .line;
+  border-color: #dbbba9;
+}

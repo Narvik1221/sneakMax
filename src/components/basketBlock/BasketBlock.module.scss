@@ -1,0 +1,61 @@
+.basket {
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  top: 0;
+  box-shadow: 0px -4px 10px 0px rgba(0, 13, 84, 0.1);
+  background: rgb(255, 255, 255);
+  min-width: 300px;
+  max-width: 480px;
+  width: 30vw;
+  padding-top: 10px;
+  max-height: 520px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 13px;
+  box-shadow: 0px -4px 10px 0px rgba(0, 13, 84, 0.1);
+  background: rgb(255, 255, 255);
+  .left {
+  }
+  h5 {
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 4px;
+  background: #f14f4f;
+  padding: 22px clamp(22px, 3.5vw, 47px);
+  width: fit-content;
+
+  &:hover {
+    background: #cc4949;
+  }
+
+  &:active {
+    background: #8c2828;
+  }
+
+  &:disabled {
+    background-color: #cc4949;
+    opacity: 0.8;
+    cursor: auto;
+  }
+}
