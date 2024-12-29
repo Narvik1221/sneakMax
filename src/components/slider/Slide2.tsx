@@ -39,7 +39,7 @@ export const Slide2: React.FC<SlideProps> = ({ goToNextSlide, setValue }) => {
     <SlideWrapper
       number={"2 из 3"}
       goToNextSlide={goToNextSlide}
-      subtitle={"Какой тип кроссовок рассматриваете?"}
+      subtitle={"Какой размер вам подойдет?"}
     >
       <div className={styles.slide2__list}>
         {sizes.map((size, index) => (

@@ -10,8 +10,10 @@
   max-width: 580px;
   width: 100%;
   padding-top: 10px;
-  max-height: 902px;
+  max-height: 85vh;
   padding: clamp(20px, 3vw, 40px);
+
+  overflow: auto;
 }
 .form {
   display: flex;
@@ -19,10 +21,10 @@
 }
 .form input {
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: clamp(10px, 1.5vw, 20px);
   border-radius: 4px;
   color: #444b58;
-  height: 60px;
+  height: clamp(40px, 4.5vw, 60px);
   max-width: 500px;
   width: 100%;
   margin-bottom: 10px;

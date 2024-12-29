@@ -1,5 +1,6 @@
 .page_basket {
   position: absolute;
+  overflow: auto;
   z-index: 5;
   right: 0;
   left: 0;
@@ -15,7 +16,8 @@
   color: #444b58;
   gap: clamp(10px, 1.5vw, 20px);
   top: clamp(30px, 4vh, 60px);
-  height: 85vh;
+  height: 75vh;
+  max-height: 85vh;
 }
 
 .left {
@@ -24,6 +26,7 @@
   flex: 1 1 50%;
 }
 .left_image {
+  margin-bottom: 10px;
   max-width: 540px;
 }
 .footer {
@@ -69,6 +72,7 @@
   flex-direction: column;
 }
 .right_top {
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
